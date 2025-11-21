@@ -19,6 +19,13 @@ body {
     top: 0;
     z-index: 1000;
     box-sizing: border-box;
+    display: inline-block;
+
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .topbar a {
@@ -30,19 +37,18 @@ body {
     font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
+    display: inline-block;
+
 }
 
-.topbar a.logo {
-    font-size: 25px;
-    font-weight: bold;
-}
 
-.topbar a:hover {
+
+.buttons a:hover {
     background-color: #ddd;
     color: black;
 }
 
-.topbar a:active {
+.buttons a:active {
     background-color: cornsilk;
     color: white;
 }
