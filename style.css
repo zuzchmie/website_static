@@ -55,7 +55,12 @@ ul {
     margin-top: 100px;
     text-align: left;
     padding-left: 20px;
+    text-align: center;
     /* add space so content isn't hidden behind topbar */
+}
+
+table {
+    margin: 0px auto;
 }
 
 h1,
