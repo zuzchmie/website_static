@@ -106,6 +106,13 @@ img {
     width: device-width;
 }
 
-.content {
-    padding-top: 120px;
+
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        /* prevents layout breaking if content is long */
+    }
 }
