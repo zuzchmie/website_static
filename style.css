@@ -41,6 +41,12 @@ body {
 
 }
 
+.topbar .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
 
 
 .buttons a:hover {
@@ -58,10 +64,9 @@ ul {
 }
 
 .content {
-    margin-top: 100px;
-    text-align: left;
     padding-left: 20px;
     text-align: center;
+    padding-top: 120px;
     /* add space so content isn't hidden behind topbar */
 }
 
@@ -79,8 +84,28 @@ img {
     height: 400px;
 }
 
-@media (max-width: 979px) {
-    body {
-        padding-top: 0px;
+@media (max-width: 768px) {
+    .content {
+        padding-top: 120px;
     }
+
+    .topbar {
+        padding: 30px 10px;
+
+    }
+
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+@viewport {
+    width: device-width;
+}
+
+.content {
+    padding-top: 120px;
 }
