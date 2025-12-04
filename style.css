@@ -79,11 +79,11 @@ table {
 table th,
 table td {
     width: 50%;
-    /* Sets both columns to be exactly half the table width */
+
     text-align: left;
-    /* Keep text aligned neatly */
+
     padding: 8px;
-    /* Add some padding for better readability */
+
 }
 
 h1,
@@ -125,7 +125,7 @@ img {
 
 
     .content {
-        padding-top: 220px;
+        padding-top: 400px;
 
     }
 
@@ -136,11 +136,19 @@ img {
         max-width: 500px;
     }
 
-
     table {
-        width: 100%;
-        display: block;
-        overflow-x: auto;
+        margin: 0px auto;
+        width: 80%;
+        table-layout: fixed;
+    }
+
+    table th,
+    table td {
+        width: 50%;
+
+        text-align: left;
+
+        padding: 8px;
 
     }
 
