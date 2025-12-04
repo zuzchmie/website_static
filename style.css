@@ -72,6 +72,18 @@ ul {
 
 table {
     margin: 0px auto;
+    width: 80%;
+    table-layout: fixed;
+}
+
+table th,
+table td {
+    width: 50%;
+    /* Sets both columns to be exactly half the table width */
+    text-align: left;
+    /* Keep text aligned neatly */
+    padding: 8px;
+    /* Add some padding for better readability */
 }
 
 h1,
@@ -86,7 +98,7 @@ img {
 
 @media (max-width: 768px) {
     .content {
-        padding-top: 150px;
+        padding-top: 180px;
     }
 
     .topbar {
