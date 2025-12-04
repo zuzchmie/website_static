@@ -10,6 +10,8 @@ body {
     margin: 0;
 }
 
+
+
 .topbar {
     background-color: var(--main-bar-color);
     padding: 20px 10px;
@@ -19,8 +21,12 @@ body {
     top: 0;
     z-index: 1000;
     box-sizing: border-box;
-    display: inline-block;
+    /* CHANGE: Remove display: inline-block, it complicates layout */
+    /* REMOVED: display: inline-block; */
 
+    /* ADD: Use flexbox for topbar to align logo and buttons section */
+    display: flex;
+    /* Align everything to the left */
 }
 
 .logo {
@@ -29,7 +35,6 @@ body {
 }
 
 .topbar a {
-    float: left;
     color: black;
     text-align: center;
     padding: 12px;
@@ -86,7 +91,7 @@ img {
 
 @media (max-width: 768px) {
     .content {
-        padding-top: 120px;
+        padding-top: 150px;
     }
 
     .topbar {
@@ -97,8 +102,14 @@ img {
     .buttons {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         gap: 5px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 500px;
+
     }
 }
 
@@ -113,6 +124,5 @@ img {
         width: 100%;
         display: block;
         overflow-x: auto;
-        /* prevents layout breaking if content is long */
     }
 }
