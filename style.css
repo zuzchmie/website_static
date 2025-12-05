@@ -16,7 +16,7 @@ body {
     background-color: var(--main-bar-color);
     padding: 20px 10px;
     width: 100vw;
-    position: fixed;
+    /*position: fixed;*/
     left: 0;
     top: 0;
     z-index: 1000;
@@ -67,7 +67,7 @@ ul {
 .content {
     padding-left: 20px;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 50px;
 }
 
 table {
